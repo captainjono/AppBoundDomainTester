@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+        <ProjectGuid>{53054874-A47E-4619-B0F3-B56A8748C971}</ProjectGuid>
+        <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+        <TemplateGuid>{edc1b0fa-90cd-4038-8fad-98fe74adb368}</TemplateGuid>
+        <OutputType>Exe</OutputType>
+        <RootNamespace>AppBoundTestNative</RootNamespace>
+        <AssemblyName>AppBoundTestNative</AssemblyName>
+        <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+        <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+        <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+        <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+        <ProvisioningType>manual</ProvisioningType>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+        <DefineConstants>DEBUG</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <MtouchArch>x86_64</MtouchArch>
+        <MtouchLink>None</MtouchLink>
+        <MtouchDebug>true</MtouchDebug>
+        <CodesignKey>iPhone Developer</CodesignKey>
+        <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+        <DebugType>none</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <MtouchArch>x86_64</MtouchArch>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>None</MtouchLink>
+    <MtouchInterpreter>-all</MtouchInterpreter>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\iPhone\Debug</OutputPath>
+        <DefineConstants>DEBUG</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <MtouchArch>ARM64</MtouchArch>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>None</MtouchLink>
+    <MtouchInterpreter>-all</MtouchInterpreter>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+        <DebugType>none</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\iPhone\Release</OutputPath>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+        <MtouchArch>ARM64</MtouchArch>
+        <CodesignKey>iPhone Developer</CodesignKey>
+        <MtouchLink>SdkOnly</MtouchLink>
+        <IntermediateOutputPath></IntermediateOutputPath>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System" />
+        <Reference Include="System.Xml" />
+        <Reference Include="System.Core" />
+        <Reference Include="Xamarin.iOS" />
+        <Reference Include="System.Numerics" />
+        <Reference Include="System.Numerics.Vectors" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    </ItemGroup>
+    <ItemGroup>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+            <Visible>false</Visible>
+        </ImageAsset>
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="Resources\" />
+    </ItemGroup>
+    <ItemGroup>
+        <InterfaceDefinition Include="LaunchScreen.storyboard" />
+        <InterfaceDefinition Include="Main.storyboard" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="Info.plist" />
+        <None Include="Entitlements.plist" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Main.cs" />
+        <Compile Include="AppDelegate.cs" />
+        <Compile Include="SceneDelegate.cs" />
+        <Compile Include="ViewController.cs" />
+        <Compile Include="ViewController.designer.cs">
+            <DependentUpon>ViewController.cs</DependentUpon>
+        </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\ngsw-worker.js" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\ngsw.json" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\favicon.ico" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\index.html" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\safety-worker.js" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\polyfills-es2015.f332a089ad1600448873.js" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\styles.0041679a3e92decd3c11.css" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\3rdpartylicenses.txt" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\runtime-es2015.46453d46df1cb5ee2164.js" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\runtime-es5.46453d46df1cb5ee2164.js" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\main-es5.2d55240cef008420cb3d.js" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\worker-basic.min.js" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\5-es5.4c4031cebdc57b147f03.js" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\main-es2015.2d55240cef008420cb3d.js" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\manifest.webmanifest" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\5-es2015.4c4031cebdc57b147f03.js" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\polyfills-es5.177e85a9724683782539.js" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\assets\icons\icon-192x192.png" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\assets\icons\icon-384x384.png" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\assets\icons\icon-72x72.png" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\assets\icons\icon-96x96.png" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\assets\icons\icon-152x152.png" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\assets\icons\icon-512x512.png" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\assets\icons\icon-144x144.png" />
+      <BundleResource Include="Resources\GCDWebUploader_cn.bundle\assets\icons\icon-128x128.png" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\GCDWebServerBinding\GCDWebServerBinding.csproj">
+        <Project>{38F47709-0FBF-45FF-AFA2-2B64B904D141}</Project>
+        <Name>GCDWebServerBinding</Name>
+      </ProjectReference>
+    </ItemGroup>
+    <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
